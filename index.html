@@ -4,32 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PLANT</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
 </head>
 <body>
 <header>
     <div class="member">
-        <img src="assets/image/user-profile.png" alt="user">
-        <img src="assets/image/shopping-cart.png" alt="cart">
+        <a href="#"><img src="assets/images/user-profile.png" alt="user"></a>
+        <a href="#"><img src="assets/images/shopping-cart.png" alt="cart"></a>
     </div>
-    <div class="tle">PLANT</div>
-    <nav>
-        <ul>
-            <li>精選盆栽</li>
-            <li>室內盆栽</li>
-            <li>盆栽工具</li>
-            <li>植物照顧</li>
-            <li>挑選指南</li>
-            <li>關於我們</li>
-        </ul>
-    </nav>
+    <div class="tle"><a href="index.html">PLANT</a></div>
 </header>
 <main>
-    
+    <span id="tab-1">主頁</span>
+    <span id="tab-2">頁面1</span>
+    <span id="tab-3">頁面2</span>
+    <span id="tab-4">頁面3</span>
+    <span id="tab-5">頁面4</span>
+    <span id="tab-6">頁面5</span>
+
+    <!-- 頁籤按鈕 -->
+    <div id="tab">
+            <ul>
+            <li><a href="#tab-1"><img src="assets/images/fire.png"> 精選盆栽</a></li>
+            <li><a href="#tab-2"><img src="assets/images/plant-pot.png"> 室內盆栽</a></li>
+            <li><a href="#tab-3"><img src="assets/images/shovel.png"> 盆栽工具</a></li>
+            <li><a href="#tab-4"><img src="assets/images/question.png"> 植物照顧</a></li>
+            <li><a href="#tab-5"><img src="assets/images/guide.png"> 挑選指南</a></li>
+            <li><a href="#tab-6"><img src="assets/images/about.png"> 關於我們</a></li>
+            </ul>
+        <!-- 頁籤的內容區塊 -->
+        <div class="tab-content-1">
+            <p>精選盆栽顯示的內容</p>
+        </div>
+        <div class="tab-content-2">
+            <p>室內盆栽顯示的內容</p>
+        </div>
+        <div class="tab-content-3">
+            <p>盆栽工具顯示的內容</p>
+        </div>
+        <div class="tab-content-4">
+            <p>植物照顧顯示的內容</p>
+        </div>
+        <div class="tab-content-5">
+            <p>挑選指南顯示的內容</p>
+        </div>
+        <div class="tab-content-6">
+            <p>關於我們顯示的內容</p>
+        </div>
+    </div>
 </main>
 <footer>
-
+    <p>Copyright © 2021 中原資管系</p>
 </footer>
 </body>
 </html>
