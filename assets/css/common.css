@@ -40,8 +40,8 @@ header img{
 /* 頁籤ul */
 #tab {
     width: 1500px;
-    background: #27282d;
-    border: solid 5px #27282d;
+    background: #8d6852;
+    border: solid 5px #8d6852;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -64,12 +64,13 @@ header img{
     margin-left: 5px;
 }
 
-#tab > ul > li :hover{
-    color: #fff;
-}
-
 #tab > ul > li > a > img {
     width: 20px;
+}
+
+#tab > ul > li :hover{
+    color: rgb(225, 203, 179);
+    font-weight: bold;
 }
 
 /*頁籤div內容*/
@@ -83,7 +84,7 @@ header img{
 
 /*第一筆的底色*/
 span:target ~ #tab > ul li:first-child a {
-    background: #27282d;
+    background: #8d6852;
 }
 
 span:target ~ #tab > div:first-of-type {
