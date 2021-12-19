@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入與註冊</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+</head>
+
+<body>
+    <div class="container">
+    	<div class="leaf-1"></div>
+    	<div class="leaf-2"></div>
+    	<div class="stem"></div>
+    	<div class="top"></div>
+        <div id="box1">
+            <form method="post" action="">
+                <div id="login">
+                	<br>
+                    <p class="title">登入 Login</p>
+                    <input class="textbox" type="text" id="email" name="email" placeholder="E-Mail" required>
+                    <br><br>
+                    <input class="textbox" type="Password" id="password" name="password" placeholder="Password" required>
+                    <br><br>
+                    <input type="submit" class="submit" value="登入"><br>
+                    <p class="change" onclick="changebox()">還沒有帳號？<br>速速去註冊</p>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div id="box2">
+            <form method="post" action="">
+                <div id="signup">
+                    <p class="title">註冊 Sign up</p>
+                    <input class="textbox" type="text" id="username" name="username" placeholder="Username" required>
+                    <br><br>
+                    <input class="textbox" type="text" id="email2" name="email2" placeholder="E-Mail" required>
+                    <br><br>
+                    <input class="textbox" type="Password" id="password2" name="password2" placeholder="Password" required>
+                    <br><br>
+                    <input type="submit" class="submit" value="註冊">
+                    <br>
+                    <p class="change" onclick="changebox()">有帳號了？<br>趕快登入逛逛吧</p>
+            </form>
+        </div>
+    </div>
+    <div class="back">
+        <a href="index.html"><img src="assets/images/back.png"></a>
+    </div>
+    </div>
+    <script>
+    function changebox() {
+        var login = document.getElementById("box1");
+        var signup = document.getElementById("box2");
+        if (login.style.display === "none") {
+            login.style.display = "block";
+            document.getElementById("username");
+            document.getElementById("password");
+            signup.style.display="none";
+        }else{
+        	login.style.display="none"
+        	signup.style.display="block";
+        	signup.style.visibility="visible";
+        	document.getElementById("username");
+        	document.getElementById("email2");
+        	document.getElementById("password2");
+        }
+    }
+    </script>
+</body>
+
+</html>

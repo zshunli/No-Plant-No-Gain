@@ -125,7 +125,7 @@ span ~ #tab > div:first-of-type,
 #tab-5:target ~ #tab > div.tab-content-5,
 #tab-6:target ~ #tab > div.tab-content-6 {
     visibility: visible;
-    height: 200px;
+    height: 2000px;
     background: #fff;
 }
 
