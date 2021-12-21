@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入與註冊</title>
+    <title>Login</title>
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
 </head>
 
@@ -42,32 +42,14 @@
                     <input type="submit" class="submit" value="註冊">
                     <br>
                     <p class="change" onclick="changebox()">有帳號了？<br>趕快登入逛逛吧</p>
+                </div>
             </form>
         </div>
+        <div class="back">
+            <a href="index.html"><img src="assets/images/back.png"></a>
+        </div>
     </div>
-    <div class="back">
-        <a href="index.html"><img src="assets/images/back.png"></a>
-    </div>
-    </div>
-    <script>
-    function changebox() {
-        var login = document.getElementById("box1");
-        var signup = document.getElementById("box2");
-        if (login.style.display === "none") {
-            login.style.display = "block";
-            document.getElementById("username");
-            document.getElementById("password");
-            signup.style.display="none";
-        }else{
-        	login.style.display="none"
-        	signup.style.display="block";
-        	signup.style.visibility="visible";
-        	document.getElementById("username");
-        	document.getElementById("email2");
-        	document.getElementById("password2");
-        }
-    }
-    </script>
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>

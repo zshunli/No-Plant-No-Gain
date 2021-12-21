@@ -1,7 +1,7 @@
 body {
     background-image: url(../images/plantbg2.jpg);
     background-repeat: repeat;
-    overflow: hidden;
+    overflow-x: hidden;
     font-size: 21px;
 
 }
@@ -125,7 +125,7 @@ body {
 
 #box2 {
     visibility: hidden;
-
+    display: none;
 
 }
 .textbox{
@@ -136,7 +136,7 @@ body {
     position: absolute;
     height: 100px;
     width: 100px;
-    top: 87%;
+    top: 86%;
     z-index: 10;
 
 

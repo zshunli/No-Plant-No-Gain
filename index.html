@@ -4,81 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLANT</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <title>No Plant No Gain</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
-<header>
-    <div class="member">
-        <a href="login.html"><img src="assets/images/user-profile.png" alt="user"></a>
-        <a href="#"><img src="assets/images/shopping-cart.png" alt="cart"></a>
-    </div>
-    <div class="tle"><a href="index.html">PLANT</a></div>
-</header>
-<main>
-    <span id="tab-1">主頁</span>
-    <span id="tab-2">頁面1</span>
-    <span id="tab-3">頁面2</span>
-    <span id="tab-4">頁面3</span>
-    <span id="tab-5">頁面4</span>
-    <span id="tab-6">頁面5</span>
-
-    <!-- 頁籤按鈕 -->
-    <div id="tab">
-            <ul>
-            <li><a href="#tab-1"><img src="assets/images/fire.png"> 精選盆栽</a></li>
-            <li><a href="#tab-2"><img src="assets/images/plant-pot.png"> 室內盆栽</a></li>
-            <li><a href="#tab-3"><img src="assets/images/shovel.png"> 盆栽工具</a></li>
-            <li><a href="#tab-4"><img src="assets/images/question.png"> 植物照顧</a></li>
-            <li><a href="#tab-5"><img src="assets/images/guide.png"> 挑選指南</a></li>
-            <li><a href="#tab-6"><img src="assets/images/about.png"> 關於我們</a></li>
-            </ul>
-        <!-- 頁籤的內容區塊 -->
-        <div class="tab-content-1">
-            <section>
-                <div class="banner_container">
-                    <ul class="img_box">
-                        <li><img src="assets/images/5.jpg" alt=""></li>
-                        <li><img src="assets/images/1.jpg" alt=""></li>
-                        <li><img src="assets/images/2.jpg" alt=""></li>
-                        <li><img src="assets/images/3.jpg" alt=""></li>
-                        <li><img src="assets/images/4.jpg" alt=""></li>
-                        <li><img src="assets/images/5.jpg" alt=""></li>
-                        <li><img src="assets/images/1.jpg" alt=""></li>
-                    </ul>
-                    <ul class="sel_box">
-                        <li data-index="0"></li>
-                        <li data-index="1"></li>
-                        <li data-index="2"></li>
-                        <li data-index="3"></li>
-                        <li data-index="4"></li>
-                    </ul>
-                    <div class="left_btn"><img src="assets/images/arrowleft.png"></div>
-                    <div class="right_btn"><img src="assets/images/arrowright.png"></div>
+    <header>
+        <a href="#" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+        <nav>
+            <a href="#">室內盆栽</a>
+            <a href="#">盆栽工具</a>
+            <a href="#">植物照顧</a>
+            <a href="#">挑選指南</a>
+            <a href="#">關於我們</a>
+        </nav>
+        <div class="iconbox">
+            <a href="login.html"><img src="assets/images/user-profile.png" alt="user"></a>
+            <a href="#"><img src="assets/images/shopping-cart.png" alt="cart"></a>
+        </div>
+    </header>
+    <main>
+        <!--輪播圖-->
+        <section>
+            <div class="banner_container">
+                <ul class="img_box">
+                    <li><img src="assets/images/5.jpg" alt=""></li>
+                    <li><img src="assets/images/1.jpg" alt=""></li>
+                    <li><img src="assets/images/2.jpg" alt=""></li>
+                    <li><img src="assets/images/3.jpg" alt=""></li>
+                    <li><img src="assets/images/4.jpg" alt=""></li>
+                    <li><img src="assets/images/5.jpg" alt=""></li>
+                    <li><img src="assets/images/1.jpg" alt=""></li>
+                </ul>
+                <ul class="sel_box">
+                    <li data-index="0"></li>
+                    <li data-index="1"></li>
+                    <li data-index="2"></li>
+                    <li data-index="3"></li>
+                    <li data-index="4"></li>
+                </ul>
+                <div class="left_btn"><img src="assets/images/arrowleft.png"></div>
+                <div class="right_btn"><img src="assets/images/arrowright.png"></div>
+            </div>
+            <script src="assets/js/carousel.js"></script>
+        </section>
+        <!--熱門商品-->
+        <section>
+            <p class="litle">熱門商品</p>
+            <div class="box">
+                <div><img src="assets/images/good1.jpg" alt="good1"><p>階梯木盆 – 步步高升</p></div>
+                <div><img src="assets/images/good1.jpg" alt="good1"><p>階梯木盆 – 步步高升</p></div>
+                <div><img src="assets/images/good1.jpg" alt="good1"><p>階梯木盆 – 步步高升</p></div>
+            </div>
+        </section>
+        <hr>
+        <!--精選盆栽-->
+        <section>
+            <p class="litle">精選商品</p>
+            <div class="box-2">
+                <div class="img_div">
+                    <img src="assets/images/good2.jpg" alt="good2">
+                        <a href="#">
+                            <div class="mask">
+                               <h3>Go Go Go</h3>
+                            </div>
+                        </a>
+                    <div><h4>歐巴人生+多肉植物</h4><p>來自台灣 T-bone 的品牌，於 2015 年開始創立，由台灣設計師王逸萍與原型師詹詠強組成，創立初衷因為有感於現今社會喜歡追求「快速」、「流行」的產品，卻忘記一件好的作品是可以留在身邊許久，擁有「不可被取代」的情感。T-bone 希望自己的作品能讓每位購買人帶回家後都有如此感受，因此成立至今四年，他們堅持每一件作品都是自己設計，從製作模具，灌製生產，研磨拋修，養護強化都是親手完成。</p></div>
                 </div>
-                <script src="assets/js/animation.js"></script>
-            </section>
-        </div>
-        <div class="tab-content-2">
-            <p>室內盆栽顯示的內容</p>
-        </div>
-        <div class="tab-content-3">
-            <p>盆栽工具顯示的內容</p>
-        </div>
-        <div class="tab-content-4">
-            <p>植物照顧顯示的內容</p>
-        </div>
-        <div class="tab-content-5">
-            <p>挑選指南顯示的內容</p>
-        </div>
-        <div class="tab-content-6">
-            <p>關於我們顯示的內容</p>
-        </div>
-    </div>
-</main>
-<footer>
-    <p>Copyright © 2021 中原資管系</p>
-</footer>
+                <div class="img_div">
+                    <img src="assets/images/good2.jpg" alt="good2">
+                        <a href="#">
+                            <div class="mask">
+                               <h3>Go Go Go</h3>
+                            </div>
+                        </a>
+                    <div><h4>歐巴人生+多肉植物</h4><p>來自台灣 T-bone 的品牌，於 2015 年開始創立，由台灣設計師王逸萍與原型師詹詠強組成，創立初衷因為有感於現今社會喜歡追求「快速」、「流行」的產品，卻忘記一件好的作品是可以留在身邊許久，擁有「不可被取代」的情感。T-bone 希望自己的作品能讓每位購買人帶回家後都有如此感受，因此成立至今四年，他們堅持每一件作品都是自己設計，從製作模具，灌製生產，研磨拋修，養護強化都是親手完成。</p></div>
+                </div>
+                <div class="img_div">
+                    <img src="assets/images/good2.jpg" alt="good2">
+                        <a href="#">
+                            <div class="mask">
+                               <h3>Go Go Go</h3>
+                            </div>
+                        </a>
+                    <div><h4>歐巴人生+多肉植物</h4><p>來自台灣 T-bone 的品牌，於 2015 年開始創立，由台灣設計師王逸萍與原型師詹詠強組成，創立初衷因為有感於現今社會喜歡追求「快速」、「流行」的產品，卻忘記一件好的作品是可以留在身邊許久，擁有「不可被取代」的情感。T-bone 希望自己的作品能讓每位購買人帶回家後都有如此感受，因此成立至今四年，他們堅持每一件作品都是自己設計，從製作模具，灌製生產，研磨拋修，養護強化都是親手完成。</p></div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!--精選文章-->
+        <section>
+            <p class="litle">精選文章</p>
+            <div class="box-3">
+                <div>
+                    <img src="assets/images/good3.jpg" alt="good3">
+                    <div class="text">
+                        <h4>南非龜甲龍</h4>
+                        <p>在台灣也可以簡稱「南龜」。他是一種非常新奇的多肉植物，南龜最大的特點是巨大如軟木狀的塊莖，在原生地直徑可以超過 1 公尺！若是他上頭沒有長葉子，你可能還以為他就是塊石頭，看上去了無生氣，但他可是百分百的大塊莖呢。</p>
+                        <a href="#">了解詳情</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/good3.jpg" alt="good3">
+                    <div class="text">
+                        <h4>南非龜甲龍</h4>
+                        <p>在台灣也可以簡稱「南龜」。他是一種非常新奇的多肉植物，南龜最大的特點是巨大如軟木狀的塊莖，在原生地直徑可以超過 1 公尺！若是他上頭沒有長葉子，你可能還以為他就是塊石頭，看上去了無生氣，但他可是百分百的大塊莖呢。</p>
+                        <a href="#">了解詳情</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/images/good3.jpg" alt="good3">
+                    <div class="text">
+                        <h4>南非龜甲龍</h4>
+                        <p>在台灣也可以簡稱「南龜」。他是一種非常新奇的多肉植物，南龜最大的特點是巨大如軟木狀的塊莖，在原生地直徑可以超過 1 公尺！若是他上頭沒有長葉子，你可能還以為他就是塊石頭，看上去了無生氣，但他可是百分百的大塊莖呢。</p>
+                        <a href="#">了解詳情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!--區塊導覽-->
+        <section>
+            <div class="box-4">
+                <div class="text-2">
+                    <img src="assets/images/tool.jpg" alt="tool">
+                    <div>
+                        <h4>盆栽工具</h4>
+                        <p>可別小看這只噴霧器，它的出水量與噴霧的擴散程度絕對讓你驚艷！連我們自己也都愛不釋手，愛上幫空氣鳳梨澆水的樂趣！裝滿水可連續照顧空氣鳳梨 1 個月，別於以往鮮豔色彩的園藝工具，深灰色瓶身搭配黑白雙色噴頭。不讓工具成為格格不入的配件，輕易融入任何空間。</p>
+                        <div class="leaf"><a href="#">快速前往</a></div>
+                    </div>
+                </div>
+                <div class="text-2">
+                    <img src="assets/images/tool.jpg" alt="tool">
+                    <div>
+                        <h4>植物照顧</h4>
+                        <p>可別小看這只噴霧器，它的出水量與噴霧的擴散程度絕對讓你驚艷！連我們自己也都愛不釋手，愛上幫空氣鳳梨澆水的樂趣！裝滿水可連續照顧空氣鳳梨 1 個月，別於以往鮮豔色彩的園藝工具，深灰色瓶身搭配黑白雙色噴頭。不讓工具成為格格不入的配件，輕易融入任何空間。</p>
+                        <div class="leaf"><a href="#">快速前往</a></div>
+                    </div>
+                </div>
+                <div class="text-2">
+                    <img src="assets/images/tool.jpg" alt="tool">
+                    <div>
+                        <h4>挑選指南</h4>
+                        <p>可別小看這只噴霧器，它的出水量與噴霧的擴散程度絕對讓你驚艷！連我們自己也都愛不釋手，愛上幫空氣鳳梨澆水的樂趣！裝滿水可連續照顧空氣鳳梨 1 個月，別於以往鮮豔色彩的園藝工具，深灰色瓶身搭配黑白雙色噴頭。不讓工具成為格格不入的配件，輕易融入任何空間。</p>
+                        <div class="leaf"><a href="#">快速前往</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <p>
+            © 2021 曾順莉 楊芷昀 洪語婕 林奕萱 版權所有
+        </p>
+    </footer>
 </body>
 </html>
