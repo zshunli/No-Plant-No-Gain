@@ -38,10 +38,12 @@ header{
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 200px;
-    margin: 0 10px;
+    margin: 0 20px;
 }
+
+
 
 nav{
     display: flex;

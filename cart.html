@@ -7,6 +7,7 @@
     <title>購物車</title>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="app">
@@ -21,19 +22,18 @@
             <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
                 <div class="item_header item_body">
                     <div class="item_detail">
-                        <img v-bind:src="item.imgUrl" alt="">
                         <div class="name">{{item.itemName}}</div>
                     </div>
                     
                     <div class="price"><span>$</span>{{item.price}}</div>
                     <div class="count">
-                        <button @click="handleSub(item)">-</button>
+                        <button @click="handleSub(item)" class="minus">-</button>
                         {{item.count}}
-                        <button @click="handlePlus(item)">+</button>
+                        <button @click="handlePlus(item)" class="plus">+</button>
                     </div> 
                     <div class="amount">{{item.price * item.count}}</div>
                     <div class="operate">
-                        <button @click="handledelete(index)">刪除</button>
+                        <button @click="handledelete(index)" class="btn"><i class="fa fa-trash"></i></button>
                     </div>
                 </div>
             </div>

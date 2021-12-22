@@ -111,30 +111,22 @@ hr{
 
 /*精選盆栽*/
 .box-2{
+  position: relative;
   margin: 70px 0;
-
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .img_div {
   position: relative;
-  width: 1000px;
+  width: 350px;
   height: 233px;
-  margin: 50px auto;
-  display: flex;
+  margin: 50px 0;
 }
 
 .img_div img{
   width: 350px;
   height: 233px;
-}
-
-.img_div h4{
-  margin: 0 20px;
-}
-
-.img_div p {
-  margin: 10px 20px;
-  font-size: 16px;
 }
 
 .mask {
@@ -159,6 +151,14 @@ hr{
   opacity: 1;           
 }
 
+.goodname {
+  text-align: center;
+}
+
+h5{
+  text-align: center;
+}
+
 /*精選文章*/
 .box-3{
   display: flex;
@@ -169,6 +169,44 @@ hr{
 .box-3 img{
   width: 350px;
 }
+
+.textbox {
+  position: relative;
+  border: 1px solid #03A9F3;
+}
+:root {
+  --borderColor: #03A9F3;
+}
+.textbox::before,
+.textbox::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      transition: .3s ease-in-out;
+  }
+  
+  .textbox::before {
+      top: -5px;
+      left: -5px;
+      border-top: 1px solid var(--borderColor);
+      border-left: 1px solid var(--borderColor);
+  }
+  
+  .textbox::after {
+      right: -5px;
+      bottom: -5px;
+      border-bottom: 1px solid var(--borderColor);
+      border-right: 1px solid var(--borderColor);
+  }
+  
+  .textbox:hover::before,
+  .textbox:hover::after {
+      width: calc(100% + 9px);
+      height: calc(100% + 9px);
+  }
+
+
 
 .text{
   width: 350px;
@@ -197,6 +235,10 @@ hr{
   margin: 0 30px;
 }
 
+.box-4 img:hover {
+  transform: scale(1.2);
+}
+
 .text-2{
   display: flex;
   margin: 30px auto;
@@ -210,7 +252,7 @@ hr{
   position: relative;
 }
 
-.text-2 h4{
+.text-2 h3{
   font-size: 20px;
 }
 
@@ -225,11 +267,10 @@ hr{
   right: 0;
   width: 70px;
   height: 70px;
-  border:1px solid green;
   border-radius: 100px 0;
   box-sizing: border-box;
   transition: .3s;
-  background-color: rgb(0, 204, 0);
+  background: rgb(0, 200, 0);
 }
 
 .text-2 a{
@@ -237,9 +278,4 @@ hr{
   bottom: 25px;
   right: 0;
   transform: rotate(-45deg);
-}
-
-.leaf :hover{
-  transform: rotate(20deg);
-  opacity: 1;
 }
