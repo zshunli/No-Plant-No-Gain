@@ -20,6 +20,11 @@ a:visited{
     text-decoration: none;
 }
 
+hr{
+    width: 80%;
+    margin: 0 auto;
+  }
+
 header{
     display: flex;
     align-items: center;

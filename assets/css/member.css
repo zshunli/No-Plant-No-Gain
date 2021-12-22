@@ -1,48 +1,108 @@
-* {box-sizing: border-box;}
-
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.main {
+  width: 70%;
+  margin-left: 15%;
 }
 
-#navbar {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 90px 10px;
-  transition: 0.4s;
-  position: fixed;
+.row {
   width: 100%;
-  top: 0;
-  z-index: 99;
 }
 
-#navbar a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
 
-#navbar #logo {
-  font-size: 35px;
-  font-weight: bold;
-  transition: 0.4s;
-}
-
-#navbar a:hover {
+.left {
+  height: 100%;
+  width: 35%;
   background-color: #ddd;
-  color: black;
+  box-sizing: border-box;
+}
+.right {
+  height: 100%;
+  width: 65%;
+  border: 3px #ccc solid;
+  box-sizing: border-box;
 }
 
-#navbar a.active {
-  background-color: dodgerblue;
-  color: white;
+/*左邊個人資料*/
+.left img {
+  width: 270px;
+  margin: 0;
+  margin: 50px calc(50% - 135px) 0;
 }
 
-#navbar-right {
-  float: right;
+.left table {
+  width: 80%;
+  margin: 10px auto 0 auto;
+}
+
+.left table td {
+  text-align: center;
+}
+
+.input {
+  width: 250px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px #000 solid;
+  background: none;
+  outline-style: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.input:focus {
+  box-shadow:#000 5px 5px;
+  border: 1px #000 solid;
+}
+
+.left div{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+#submit, #reset {
+  width: 100px;
+  height: 40px;
+  border: 1px #03a9f3 solid;
+  background-color: #ddd;
+  font-size: 20px;
+}
+
+#submit:hover, #reset:hover {
+  background-color: #fff;
+}
+
+/*右邊訂單*/
+.order p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.order table {
+  width: 100%;
+  margin: 30px 0;  
+}
+
+.order td {
+  width: 100px;
+  padding: 10px 35px;
+}
+
+/*右邊評論*/
+.comment p {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.comment table {
+  width: 100%;
+}
+
+.comment td {
+  width: 100px;
+  height: 50px;
+  padding: 10px 35px;
 }
