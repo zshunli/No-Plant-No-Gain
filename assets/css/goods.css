@@ -3,16 +3,20 @@
     margin: 100px auto;
 }
 
+.containers h1 {
+    margin: 0 20px;
+}
+
 .row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 .goods {
+    width: 400px;
+    display: inline-block;
     box-sizing: border-box;
-    padding: 20px 20px 50px;
+    padding: 20px 10px 50px 10px;
+    margin: 10px 10px;
     border: 1px #000 solid;
 }
 
@@ -25,8 +29,8 @@
 }
 
 .pic img {
-    width: 300px;
-    height: 200px;
+    width: 380px;
+    height: 380px;
     object-fit: cover;
     transition: .3s ease-in-out;
 }
