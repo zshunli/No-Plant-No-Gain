@@ -5,40 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>購物車</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="app">
-        <div class="container">
-            <div class="item_header">
-                <div class="item_detail">商品</div>
-                <div class="price">單價</div>
-                <div class="count">數量</div> 
-                <div class="amount">總計</div>
-                <div class="operate">操作</div>
-            </div>
-            <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
-                <div class="item_header item_body">
-                    <div class="item_detail">
-                        <div class="name">{{item.itemName}}</div>
-                    </div>
-                    
-                    <div class="price"><span>$</span>{{item.price}}</div>
-                    <div class="count">
-                        <button @click="handleSub(item)" class="minus">-</button>
-                        {{item.count}}
-                        <button @click="handlePlus(item)" class="plus">+</button>
-                    </div> 
-                    <div class="amount">{{item.price * item.count}}</div>
-                    <div class="operate">
-                        <button @click="handledelete(index)" class="btn"><i class="fa fa-trash"></i></button>
-                    </div>
+    <header>
+        <a href="index.html" class="logo"><span>No Plant No Gain</span></a>
+        <nav>
+            <a href="potted.html">室內盆栽</a>
+            <a href="#">盆栽工具</a>
+            <a href="#">植物照顧</a>
+            <a href="select.html">挑選指南</a>
+            <a href="member.html">會員專區</a>
+            <a href="#">關於我們</a>
+        </nav>
+        <div class="iconbox">
+            <a href="login.html"><img src="assets/images/user-profile.png" alt="user"></a>
+            <a href="cart.html"><img src="assets/images/shopping-cart.png" alt="cart"></a>
+        </div>
+    </header>
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div> 
+                    <div class="amount">總計</div>
+                    <div class="operate">操作</div>
                 </div>
+                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
+                        <div class="item_body">
+                                <div class="item_detail">
+                                    <div class="name">{{item.itemName}}</div>
+                                </div>
+                                
+                                <div class="price">{{item.price}}</div>
+                                <div class="count">
+                                    <button @click="handleSub(item)">-</button>
+                                    {{item.count}}
+                                    <button @click="handlePlus(item)">+</button>
+                                </div> 
+                                <div class="amount">{{item.price * item.count}}</div>
+                                <div class="operate">
+                                    <a @click="handledelete(index)">刪除</a>
+                                </div>
+                        </div>
+                </div>
+                <hr>
             </div>
         </div>
-    </div>
-    <script src="assets/js/cart.js"></script>
+        <script src="assets/js/cart.js"></script>
+        <form action="" method="post">
+            <table>
+                <tr><th>寄送資料</th></tr>
+                <tr><td>收件人姓名：</td></tr>
+                <tr><td><input type="text" name="user" id="user"></td></tr>
+                <tr><td>連絡電話：</td></tr>
+                <tr><td><input type="text" name="phone" id="phone"></td></tr>
+                <tr><td>配送方式：</td></tr>
+                <tr>
+                    <td>
+                        <select name="methon" id="">
+                            <option value="">宅配到府</option>
+                            <option value="">7-11貨到付款</option>
+                            <option value="">全家貨到付款</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td>地址：(若選擇超商則填寫超商門市)</td></tr>
+                <tr><td><input type="text" name="address" id="address"></td></tr>
+            </table>
+            <div class="btn"><input type="button" name="submit" id="submit" value="送出訂單"></div>
+            
+        </form>
+    </main>
+    <footer>
+        <p>
+            © 2021 曾順莉 楊芷昀 洪語婕 林奕萱 版權所有
+        </p>
+    </footer>
+
 </body>
 </html>
