@@ -1,0 +1,40 @@
+body{
+	scroll-behavior: smooth;
+}
+#liv{
+	margin: 5%;
+	text-align: center;
+
+}
+#liv img{
+	width: 80%;
+	
+}
+#liv p{
+	position: relative;
+	text-align: left;
+	margin: 50px 10%;
+	font-size: 20px;
+}
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+
+}
+
+.top img {
+    width: 60px;
+    cursor: pointer;
+}
+.goback{
+	position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 5;
+}
+.goback img{
+	 width: 60px;
+    cursor: pointer;
+}

@@ -1,0 +1,453 @@
+body {
+    height: 100%;
+}
+
+main {
+    margin: 5%;
+}
+
+.product {
+    height: 5500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.shopping {
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+}
+
+.buy {
+    position: sticky;
+    top: -100px;
+    margin-top: 30px;
+    height: 970px;
+    border: 1px solid #D0D0D0;
+}
+
+#mainpdpic {
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#mainpdpic img {
+    width: 100%;
+    height: 100%;
+}
+
+#mainpdpic:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 1;
+
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.close {
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.pdpic-ul {
+    box-sizing: border-box;
+    list-style-type: none;
+    text-align: center;
+    height: 120px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+#pdpic-li {
+    box-sizing: border-box;
+    float: left;
+    width: 150px;
+
+}
+
+#pdpic1 {
+    background-image: url(../images/pdpic1.jpg);
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    border: 0px;
+
+
+}
+
+#pdpic1:active {
+    border: 5px solid black;
+}
+
+#pdpic2 {
+    background-image: url(../images/pdpic2.jpg);
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    border: 0px;
+
+}
+
+#pdpic2:active {
+    border: 5px solid black;
+}
+
+#pdpic3 {
+    background-image: url(../images/pdpic3.jpg);
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    border: 0px;
+
+}
+
+#pdpic3:active {
+    border: 5px solid black;
+}
+
+
+
+.title span {
+    background-color: #D0D0D0;
+    padding: 5px;
+}
+
+.buytext {
+    text-align: center;
+    margin: 20px;
+}
+
+i {
+    margin: 20px;
+}
+
+.chooseQ {
+    margin: 30px;
+    text-align: center;
+}
+
+select {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.shoppingcar {
+    border: 1px solid #D0D0D0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.shoppingcar:hover {
+    background-color: black;
+    color: white;
+}
+
+.score {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.content {
+    width: 950px;
+    margin: 70px 0;
+    padding: 20px;
+    line-height: 2;
+
+}
+
+.intro {
+    background-color: #f7f7f7;
+    width: 800px;
+    text-align: justify;
+    margin-left: 20px;
+    padding: 20px;
+
+}
+
+.intr {
+    text-align-last: justify;
+    letter-spacing: 15px;
+
+}
+
+.intr-2 {
+    text-align-last: justify;
+    letter-spacing: 45px;
+
+}
+
+.intcon {
+    margin-inline-start: 30px;
+}
+
+.intropic {
+    text-align: center;
+    margin: 20px;
+}
+
+.intropic img {
+    width: 70%;
+    height: 50%;
+
+}
+
+.toolpic {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px;
+}
+
+.toolpic img {
+    width: 50%;
+    height: 40%;
+}
+
+.tip {
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.method {
+    width: 200px;
+    margin: 50px;
+    text-align: left;
+}
+
+.method img {
+    width: 150px;
+}
+
+
+.comment {
+    text-align: center;
+}
+
+.comment h1 {
+    padding: 20px;
+}
+
+.write {
+    text-align: center;
+    margin-left: 23%;
+    padding: 20px;
+    width: 50%;
+    border: 2px solid #333;
+
+
+}
+
+.write textarea {
+    font-size: 20px;
+    height: 30px;
+    width: 98%;
+    border: none;
+    border-bottom: 5px soild #000;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+
+}
+.my-rating-5 {
+    margin: -25px 100px 20px;
+}
+.my-rating-5 img {
+    width: 20px;
+    height: 20px
+}
+.comstar img{
+    width: 20px;
+    height: 20px
+}
+.star{
+    display: none;
+    
+}
+.star img{
+    width: 20px;
+    height: 20px
+}
+
+.btn {
+    display: none;
+}
+
+.btn button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    color: white;
+    background-color: #273c75;
+}
+
+.comtext {
+    margin-left: 25%;
+    width: 50%;
+    height: 150px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    display: flex;
+}
+
+.compic {
+    width: 20%;
+    height: 140px;
+}
+
+.compic img {
+    width: 40%;
+    height: 80px;
+    padding: 20px;
+}
+
+.like {
+    width: 100%;
+    height: 400px;
+}
+
+.like h1 {
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+.box-2{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .img_div {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 25px 0;
+  }
+  
+  .img_div img{
+    width: 250px;
+    height: 200px;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 250px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+  }
+  
+  .mask h3 {
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    margin-top: calc(35% - 20px);
+  }
+  
+  .img_div a:hover .mask {
+    opacity: 1;           
+  }
+  
+  .goodname {
+    text-align: center;
+  }
+  
+  h5{
+    text-align: center;
+  }
