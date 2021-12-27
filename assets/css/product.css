@@ -1,9 +1,5 @@
-body {
-    height: 100%;
-}
-
 main {
-    margin: 5%;
+    margin: 0 5%;
 }
 
 .product {
@@ -15,15 +11,13 @@ main {
 
 .shopping {
     box-sizing: border-box;
-    width: 40%;
-    height: 100%;
+    width: 35%;
 }
 
 .buy {
     position: sticky;
-    top: -100px;
-    margin-top: 30px;
-    height: 970px;
+    top: 10px;
+    left: 0;
     border: 1px solid #D0D0D0;
 }
 
@@ -122,8 +116,7 @@ main {
     padding: 0;
     display: flex;
     justify-content: space-between;
-    margin: 20px;
-
+    margin: 0 20px;
 }
 
 #pdpic-li {
@@ -197,25 +190,26 @@ main {
     margin: 20px;
 }
 
-i {
-    margin: 20px;
+.buytext h2 {
+    margin: 10px 0;
 }
 
 .chooseQ {
-    margin: 30px;
     text-align: center;
+    margin: 20px 0;
 }
 
 select {
     width: 100px;
-    height: 50px;
+    height: 40px;
     font-size: 16px;
     text-align: center;
 }
 
 .shoppingcar {
     border: 1px solid #D0D0D0;
-    padding: 10px;
+    width: 130px;
+    height: 40px;
     font-size: 20px;
     border-radius: 10px;
     transition: 0.5s;
@@ -229,8 +223,10 @@ select {
 }
 
 .score {
-    margin: 30px;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .content {
@@ -245,7 +241,6 @@ select {
     background-color: #f7f7f7;
     width: 800px;
     text-align: justify;
-    margin-left: 20px;
     padding: 20px;
 
 }
@@ -334,9 +329,6 @@ select {
     resize: none;
     outline: none;
 
-}
-.my-rating-5 {
-    margin: -25px 100px 20px;
 }
 .my-rating-5 img {
     width: 20px;
