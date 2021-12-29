@@ -101,112 +101,59 @@ footer p{
     font-size: 18px;
 }
 
-/*member*/
-.main {
-  width: 70%;
-  margin-left: 15%;
+/*goods*/
+.containers {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.containers h1 {
+    margin: 0 20px;
 }
 
 .row {
-  width: 100%;
+    margin: 50px auto;
 }
 
-
-.left {
-  height: 100%;
-  width: 35%;
-  background-color: #ddd;
-  box-sizing: border-box;
-}
-.right {
-  height: 100%;
-  width: 65%;
-  border: 3px #ccc solid;
-  box-sizing: border-box;
+.goods {
+    width: 400px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 10px 50px 10px;
+    margin: 10px 10px;
+    border: 1px #000 solid;
 }
 
-/*左邊個人資料*/
-.left img {
-  width: 270px;
-  margin: 0;
-  margin: 50px calc(50% - 135px) 0;
+.goods:hover {
+    box-shadow: rgb(104, 104, 104) 2px 2px 2px;
 }
 
-.left table {
-  width: 80%;
-  margin: 10px auto 0 auto;
+.picbox {
+    position: relative;
 }
 
-.left table td {
-  text-align: center;
+.pic img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    transition: .3s ease-in-out;
 }
 
-.input {
-  width: 250px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 1px #000 solid;
-  background: none;
-  outline-style: none;
-  font-size: 20px;
-  padding: 10px;
+.pic:last-child {
+    position: absolute;
+    top: 0;
 }
 
-.input:focus {
-  box-shadow:#000 5px 5px;
-  border: 1px #000 solid;
+.pic:last-child:hover {
+    opacity: 0;
 }
 
-.left div{
-  display: flex;
-  justify-content: space-evenly;
-  margin: 30px 0;
+.goods h3 {
+    margin: 20px 0 10px;
+    text-align: center;
 }
 
-#submit, #reset {
-  width: 100px;
-  height: 40px;
-  border: 1px #03a9f3 solid;
-  background-color: #ddd;
-  font-size: 20px;
-}
-
-#submit:hover, #reset:hover {
-  background-color: #fff;
-}
-
-/*右邊訂單*/
-.order p {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.order table {
-  width: 100%;
-  margin: 30px 0;  
-}
-
-.order td {
-  width: 100px;
-  padding: 10px 35px;
-}
-
-/*右邊評論*/
-.comment p {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  margin: 30px 0;
-}
-
-.comment table {
-  width: 100%;
-}
-
-.comment td {
-  width: 100px;
-  height: 50px;
-  padding: 10px 35px;
+.goods p {
+    font-size: 20px;
+    text-align: center;
 }

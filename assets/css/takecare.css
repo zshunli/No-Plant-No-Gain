@@ -1,3 +1,107 @@
+/*common*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #000;
+    text-decoration: none;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    border: none;
+}
+
+#logo span {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+nav a{
+    font-size: 20px;
+	padding: 20px;
+	border-bottom: 5px solid transparent;
+	transition: 0.3s;
+}
+nav a:hover {
+	border-bottom: 5px solid gray;
+}
+
+.iconbox img{
+    width: 30px;
+    margin: 20px;
+}
+
+main{
+    min-height: calc(100% - 100px);
+}
+
+.top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+}
+
+.top img {
+    width: 60px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+    font-size: 18px;
+}
+
+/*takecare*/
 body{
 	scroll-behavior: smooth;
 }
