@@ -1,42 +1,23 @@
-var app = new Vue({
-  el:'#app',
-  data:{
-      itemList:[
-        {
-          id:'1',
-          itemName:'金柳',
-          price:'345',
-          count:'2'
-        },
-        {
-          id:'2',
-          itemName:'白葉到手香',
-          price:'130',
-          count:'1'
-        },
-        {
-          id:'3',
-          itemName:'日本三河黑松-(4寸)',
-          price:'450',
-          count:'1'
-        },
-  ]
-  },
-  methods:{
-      handlePlus: function(item){
-          item.count++;
-      },
-      handleSub: function(item){
-          if(item.count>1){
-          item.count--;                
-          }
-      },
-      handledelete: function(index){
-          console.log(this);
-          this.itemList.splice(index,1);
-      }
-  },
-  computed:{
+function plus(add) {
+  var nex = add.previousElementSibling;
+  nex.value = Number(nex.value) + 1; 
+  var s = parseInt(add.parentNode.previousElementSibling.innerHTML);
+  var num = s*Number(nex.value);
+  nex.parentNode.nextElementSibling.innerHTML = num;
+}
 
+function minus(reduce) {
+  var pre = reduce.nextElementSibling;
+  if (pre.value>=1){
+    pre.value = Number(pre.value) - 1; 
+    var s = parseInt(reduce.parentNode.previousElementSibling.innerHTML);
+    var num = s*Number(pre.value);
+    pre.parentNode.nextElementSibling.innerHTML = num;
   }
-})
+}
+
+function deltr(td) {
+  var table = td.parentNode.parentNode;
+  var tr = td.parentNode;
+  table.removeChild(tr);
+}

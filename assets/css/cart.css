@@ -102,62 +102,38 @@ footer p{
 }
 
 /*cart*/
-.container {
-    margin: 70px 0 20px 0;
+.cart {
+    margin: 70px auto;
 }
 
-.item_header {
-    display: flex;
-    width: 900px;
-    height: 50px;
-    margin: 0 auto;
-    border: 5px solid rgb(222, 248, 255);
-}
-
-.item_header div {
-    width: 180px;
-    height: 50px;
-    line-height: 50px;
+.cart h1 {
     text-align: center;
 }
 
-.item_body {
-    display: flex;
-    width: 900px;
-    height: 50px;
-    margin: 0 auto;
-    border: 1px solid rgb(222, 248, 255);
-}
-
-.item_body div {
+.cart th, .cart td {
     width: 180px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
     text-align: center;
+    border: turquoise 1px solid;
 }
 
-.item_body div button {
-    box-sizing: border-box;
-    border: 1px #000 solid;
+.cart button {
     width: 20px;
     height: 20px;
 }
 
-.item_body div input {
-    width: 15px;
+.cart td input {
+    width: 20px;
     text-align: center;
 }
 
-.item_body div button:hover {
-    background-color: #ddd;
+.cart .del:hover {
     cursor: pointer;
-}
-
-.item_body div a:hover {
-    text-decoration: underline;
     color: red;
+    text-decoration: underline;
 }
 
+/*寄送資訊*/
 hr {
     width: 1000px;
     margin: 20px auto;

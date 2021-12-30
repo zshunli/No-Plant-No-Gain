@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>購物車</title>
     <link rel="stylesheet" href="assets/css/cart.css">
-    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,37 +24,43 @@
         </div>
     </header>
     <main>
-        <div id="app">
-            <div class="container">
-                <div class="item_header">
-                    <div class="item_detail">商品</div>
-                    <div class="price">單價</div>
-                    <div class="count">數量</div> 
-                    <div class="amount">總計</div>
-                    <div class="operate">操作</div>
-                </div>
-                <div class="item_container" v-for="(item, index) in itemList" :key="item.id" >
-                        <div class="item_body">
-                                <div class="item_detail">
-                                    <div class="name">{{item.itemName}}</div>
-                                </div>
-                                
-                                <div class="price">{{item.price}}</div>
-                                <div class="count">
-                                    <button @click="handleSub(item)">-</button>
-                                    {{item.count}}
-                                    <button @click="handlePlus(item)">+</button>
-                                </div> 
-                                <div class="amount">{{item.price * item.count}}</div>
-                                <div class="operate">
-                                    <a @click="handledelete(index)">刪除</a>
-                                </div>
-                        </div>
-                </div>
-                <hr>
-            </div>
+        <div class="cart">
+            <h1>購買項目</h1>
+            <table>
+            <tr>
+                <th>商品</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>小計</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td>金柳</td>
+                <td>345</td>
+                <td>
+                    <button onclick="minus(this)">-</button>
+                    <input id="quantity" type="text" value="1">
+                    <button onclick="plus(this)">+</button>
+                </td>
+                <td>345</td>
+                <td class="del" onclick="deltr(this)">刪除</td>
+            </tr>
+            <tr>
+                <td>白葉到手香</td>
+                <td>130</td>
+                <td>
+                    <button onclick="minus(this)">-</button>
+                    <input id="quantity" type="text" value="2">
+                    <button onclick="plus(this)">+</button>
+                </td>
+                <td>260</td>
+                <td class="del" onclick="deltr(this)">刪除</td>
+            </tr>
+            </table>
+            <script src="assets/js/cart.js"></script>
         </div>
-        <script src="assets/js/cart.js"></script>
+        
+        <hr>
         <form action="" method="post">
             <table>
                 <tr><th>寄送資料</th></tr>
