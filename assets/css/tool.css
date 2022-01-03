@@ -130,30 +130,40 @@ footer p{
 
 .picbox {
     position: relative;
+    max-width: 380px;
+    max-height: 380px;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
 }
 
-.pic img {
+.picbox img {
     width: 380px;
     height: 380px;
     object-fit: cover;
     transition: .3s ease-in-out;
 }
 
-.pic:last-child {
+.picbox img:last-child {
     position: absolute;
     top: 0;
 }
 
-.pic:last-child:hover {
+.picbox img:last-child:hover {
     opacity: 0;
 }
 
-.goods h3 {
+.textbox {
+    width: 378px;
+    height: 82px;
+}
+
+.textbox h3 {
     margin: 20px 0 10px;
     text-align: center;
 }
 
-.goods p {
+.textbox p {
     font-size: 20px;
     text-align: center;
 }

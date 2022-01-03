@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 main{
-    min-height: calc(100% - 100px);
+    min-width: calc(100% - 100px);
 }
 
 .top {
@@ -101,69 +101,79 @@ footer p{
     font-size: 18px;
 }
 
-/*goods*/
-.containers {
-    width: 90%;
-    margin: 100px auto;
+/*完成頁面*/
+.check {
+    text-align: center;
+    margin: 100px 0;
 }
 
-.containers h1 {
-    margin: 0 20px;
+img {
+    max-width: 200px;
+    max-height: 200px;
 }
 
-.row {
-    margin: 50px auto;
+h1 {
+    font-size: 40px;
+    margin: 15px;
 }
 
-.goods {
-    width: 400px;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 20px 10px 50px 10px;
-    margin: 10px 10px;
-    border: 1px #000 solid;
+/*其他推薦*/
+.other {
+    margin-bottom: 100px;
 }
 
-.goods:hover {
-    box-shadow: rgb(104, 104, 104) 2px 2px 2px;
+
+.litle{
+    margin: 50px 0 0 100px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.picbox {
+.box{
     position: relative;
-    max-width: 380px;
-    max-height: 380px;
-    object-fit: cover;
-    display: flex;
-    align-items: center;
-}
-
-.picbox img {
-    width: 380px;
-    height: 380px;
-    object-fit: cover;
-    transition: .3s ease-in-out;
-}
-
-.picbox img:last-child {
-    position: absolute;
-    top: 0;
-}
-
-.picbox img:last-child:hover {
-    opacity: 0;
-}
-
-.textbox {
-    width: 378px;
-    height: 82px;
-}
-
-.textbox h3 {
-    margin: 20px 0 10px;
     text-align: center;
 }
 
-.textbox p {
-    font-size: 20px;
+.img_div {
+    position: relative;
+    width: 350px;
+    height: 233px;
+    margin: 50px;
+    display: inline-block;
+}
+
+.img_div img{
+    max-width: 350px;
+    max-height: 233px;
+    object-fit: cover;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 233px;
+    background: rgba(101, 101, 101, 0.6);
+    color: #ffffff;
+    opacity: 0;
+}
+
+.mask h3 {
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin-top: calc(35% - 20px);
+}
+
+.img_div a:hover .mask {
+    opacity: 1;           
+}
+
+.goodname {
+    text-align: center;
+}
+
+h5{
     text-align: center;
 }

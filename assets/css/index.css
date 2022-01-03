@@ -194,8 +194,10 @@ ul.img_box {
   transform: 1s;
 }
 
-.box img{
-  width: 350px;
+.box > a > img{
+  max-width: 350px;
+  max-height: 350px;
+  object-fit: cover;
 }
 
 .box p{
@@ -224,8 +226,9 @@ ul.img_box {
 }
 
 .img_div img{
-  width: 350px;
-  height: 233px;
+  max-width: 350px;
+  max-height: 233px;
+  object-fit: cover;
 }
 
 .mask {
@@ -264,7 +267,7 @@ h5{
 }
 
 .box-4 img{
-  width: 250px;
+  max-width: 250px;
   margin: 0 30px;
 }
 
