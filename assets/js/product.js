@@ -1,7 +1,11 @@
 //換相片
-function get_num(num) {
-    document.getElementById('main').src = "assets/images/pdpic" + num + ".jpg";
-}
+$(function() {
+    $("#pdpic-ul img").click(function() {
+        var N = $(this).attr("id").substr(2, 3);
+        $("#main").attr("src", "assets/images/pdpic" + N + ".jpg");
+    });
+
+});
 //評論區點按
 var feild = document.querySelector('textarea');
 var btn = document.querySelector('.btn');
@@ -14,28 +18,21 @@ feild.onfocus = function () {
 //全螢幕相片
 var modal = document.getElementById("myModal");
 var img = document.getElementById("main");
-img.onclick = function () {
+img.onclick = function() {
     modal.style.display = "block";
-    modalImg.src = this.src;
-
 }
 var span = document.getElementsByClassName("close");
-
 function closeModal() {
     modal.style.display = "none";
 }
-
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -72,9 +69,7 @@ divStars.onmouseover = function (e) {
             next.src = "assets/images/star.png";
             next = next.nextElementSibling;
         }
-
         var index = starArray.indexOf(e.target); //找到滑鼠移動到的星星的序號
-
     }
 }
 
@@ -92,7 +87,6 @@ divStars.onmouseout = function (e) {
         for (var i = 0; i < divStars.children.length; i++) {
             if (i <= starNum) {
                 divStars.children[i].src = "assets/images/star-2.png";
-
             } else {
                 divStars.children[i].src = "assets/images/star.png";
             }
@@ -102,6 +96,5 @@ divStars.onmouseout = function (e) {
         for (var i = 0; i < divStars.children.length; i++) {
             divStars.children[i].src = "assets/images/star.png";
         }
-
     }
 }
