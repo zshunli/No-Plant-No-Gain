@@ -144,12 +144,13 @@ footer p{
     transition: .3s ease-in-out;
 }
 
-.picbox img:last-child {
+
+.exception img:last-child {
     position: absolute;
     top: 0;
 }
 
-.picbox img:last-child:hover {
+.exception img:last-child:hover {
     opacity: 0;
 }
 
